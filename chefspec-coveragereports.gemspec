@@ -13,6 +13,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/aspring/chefspec-coveragereports'
   spec.license       = 'MIT'
 
+  spec.cert_chain    = ['certs/aspring.pem']
+  spec.signing_key   = File.expand_path("~/.ssh/gem-private_key.pem") if $0 =~ /gem\z/
+
   spec.files         = Dir['{bin}/**/*', '{lib}/**/*.rb', '{templates}/**/*.erb', 'LICENSE.txt', '*.md']
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
