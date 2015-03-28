@@ -100,8 +100,8 @@ module ChefSpec
       results['totals']['covered']      = results['resources']['covered'].size
       results['totals']['uncovered']    = results['resources']['uncovered'].size
       results['totals']['percent']      = ((results['totals']['covered'] / results['totals']['resources'].to_f) * 100).round(2)
-      results['totals']['percent']      = 0 if results['totals']['percent'].nan?
-      results['totals']['percent']      = 100 if results['totals']['percent'].infinite?
+      results['totals']['percent']      = Float(0) if results['totals']['percent'].nan?
+      results['totals']['percent']      = Float(100) if results['totals']['percent'].infinite?
 
       results
     end
