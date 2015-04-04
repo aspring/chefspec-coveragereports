@@ -1,6 +1,6 @@
 # ChefSpec::CoverageReports
 
-Provides a generic interface to creating ChefSpec coverage reports, including a default JSON template.
+Provides a generic interface to creating ChefSpec coverage reports, including a default JSON report.
 
 ## Installation
 
@@ -112,7 +112,7 @@ Provides a set of totals to help make reporting easier, including total resource
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/chefspec-reports/fork )
+1. Fork it ( https://github.com/aspring/chefspec-reports/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
